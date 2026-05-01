@@ -1,0 +1,73 @@
+\documentclass[unicode,12pt,report]{ltjsarticle} 
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{tikz-cd}
+\usepackage[unicode, hidelinks]{hyperref} 
+\usepackage{bbm}
+\theoremstyle{definition} 
+\newtheorem{definition}{定義}[section] 
+\newtheorem{example}[definition]{例} 
+
+\title{圏論 第1回}
+\author{Soma Saito}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{圏の定義}
+%概要をまとめてかく%
+\begin{definition}
+  圏$\mathcal C$は、以下のデータから構成される。
+  \begin{description}
+    \item[対象] 対象のあつまり $ob(\mathcal{C})$。
+    \item[射] 各対象 $A, B \in ob(\mathcal{C})$ について定義される射の集まり $Hom(A, B)$。
+    \item[合成] 射 $f: A \to B$ と $g: B \to C$ に対して、合成射 $g \circ f$ が定まる。 
+    \item[恒等射] 各対象 $A \in ob(\mathcal{C})$ に対して、恒等射 $id_A: A \to A$ が定まる。 
+  \end{description}
+  さらに以下の条件を満たす。
+  \begin{enumerate}
+    \item \textbf{結合則}: 任意の射 $f, g, h$ について $h \circ (g \circ f) = (h \circ g) \circ f$。
+    \item \textbf{単位律}: 任意の射 $f: A \to B$ について $f \circ id_A = f$ および $id_B \circ f = f$。
+  \end{enumerate}
+\end{definition}
+
+ここで、それぞれの対象と射の集まりは、一般には集合ではない。\\
+$f \in Hom(A, B)$に対して、$A$を射$f$のドメイン、$B$をコドメインと呼ぶこともあり、それぞれ$Dom f = A, \space Cod f = B$と記述する。
+いくつかの具体例を紹介する。
+
+\begin{example}[集合の圏$\mathbf{Set}$]
+  対象の集まりとして、すべての集合の集まりを考える。すなわち、$X$を集合とすると$\forall x \in ob(Set)$である。
+  対象から対象への射として通常の写像を取れば、これは圏の定義を満たす。実際、合成を写像の合成、恒等射として恒等写像を取れば、定義を満たしていることがわかる。
+\end{example}
+
+\begin{example}
+  対象が一つしかない圏$\mathbbm {1}$を考える。その対象を$a$とすると、$\mathbbm {1}$上での射は$id_a: a \to a$のみである。これは実際に圏の定義を満たす。
+  \[\begin{tikzcd}
+	&& a 
+	\arrow["{id_a}", from=1-3, to=1-3, loop, in=55, out=125, distance=10mm]
+\end{tikzcd}\]
+\end{example}
+\section{定義}
+
+\begin{example}
+  $\mathbbm{1}$と同様、対象が二つしかない圏$\mathbbm{2}$を考える。対象を$a, b$とする。$f, g \in Mor(\mathbbm{2})$であり、それぞれ$f: a \to b, g:b \to a$として、さらに恒等射を考えれば圏の定義を満たす。
+  \[\begin{tikzcd}
+	a &&&& b
+	\arrow["{id_a}", from=1-1, to=1-1, loop, in=55, out=125, distance=10mm]
+	\arrow["f", shift left=3, from=1-1, to=1-5]
+	\arrow["g", from=1-5, to=1-1]
+	\arrow["{id_b}", from=1-5, to=1-5, loop, in=55, out=125, distance=10mm]
+\end{tikzcd}\]
+\end{example}
+
+\begin{example}
+  %離散圏
+\end{example}
+
+次に、圏と圏の対応付けであり、写像のようなものである関手を定義する。
+\begin{definition}
+  
+\end{definition}
+
+
+\end{document}

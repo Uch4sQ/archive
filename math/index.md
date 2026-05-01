@@ -4,4 +4,4 @@ Once I've finished studying category theory, I'm planning to study coalgebras an
 
 ## Current
 - [Category theory] (./category-theory/)
-I will summarize the content of the seminar about category theory I worked on with my club members and master or doctor students.
+I will summarize the content of the seminar about category theory I worked on with my club members and master or doctor students.(But in Japanese sry)
