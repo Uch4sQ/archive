@@ -1,6 +1,16 @@
 \documentclass[unicode,12pt,report]{ltjsarticle} 
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{tikz-cd}
+\usetikzlibrary{calc}
+\tikzset{curve/.style={settings={#1},to path={(\tikztostart)
+    .. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+    and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+    .. (\tikztotarget)\tikztonodes}},
+    settings/.code={\tikzset{quiver/.cd,#1}
+        \def\pv##1{\pgfkeysvalueof{/tikz/quiver/##1}}},
+    quiver/.cd,pos/.initial=0.35,height/.initial=0}
+\usetikzlibrary{spath3}
+\tikzset{between/.style n args={2}{/tikz/execute at end to={ \tikzset{spath/split at keep middle={current}{#1}{#2}} }}}
 \usepackage[unicode, hidelinks]{hyperref} 
 \usepackage{bbm}
 \theoremstyle{definition} 
@@ -13,8 +23,11 @@
 
 \begin{document}
 \maketitle
+\tableofcontents
+\clearpage
 
-\section{圏の定義}
+\section{圏}
+\subsection{圏の定義}
 %概要をまとめてかく%
 \begin{definition}
   圏$\mathcal C$は、以下のデータから構成される。
@@ -33,7 +46,9 @@
 
 ここで、それぞれの対象と射の集まりは、一般には集合ではない。\\
 $f \in Hom(A, B)$に対して、$A$を射$f$のドメイン、$B$をコドメインと呼ぶこともあり、それぞれ$Dom f = A, \space Cod f = B$と記述する。
-いくつかの具体例を紹介する。
+
+\subsection{圏の具体例}
+いくつか、簡単な圏の具体例を紹介する。
 
 \begin{example}[集合の圏$\mathbf{Set}$]
   対象の集まりとして、すべての集合の集まりを考える。すなわち、$X$を集合とすると$\forall x \in ob(Set)$である。
@@ -47,7 +62,6 @@ $f \in Hom(A, B)$に対して、$A$を射$f$のドメイン、$B$をコドメイ
 	\arrow["{id_a}", from=1-3, to=1-3, loop, in=55, out=125, distance=10mm]
 \end{tikzcd}\]
 \end{example}
-\section{定義}
 
 \begin{example}
   $\mathbbm{1}$と同様、対象が二つしかない圏$\mathbbm{2}$を考える。対象を$a, b$とする。$f, g \in Mor(\mathbbm{2})$であり、それぞれ$f: a \to b, g:b \to a$として、さらに恒等射を考えれば圏の定義を満たす。
@@ -60,14 +74,96 @@ $f \in Hom(A, B)$に対して、$A$を射$f$のドメイン、$B$をコドメイ
 \end{tikzcd}\]
 \end{example}
 
-\begin{example}
+\begin{example}[離散圏(descrete category)]
   %離散圏
+  特別な圏である離散圏を紹介する。圏$\mathcal C$が離散圏であるとは、射の集まり$Mor C$に、それぞれの対象の恒等射しか存在しないような圏のことをいう。  
 \end{example}
 
-次に、圏と圏の対応付けであり、写像のようなものである関手を定義する。
-\begin{definition}
-  
+\subsection{始対象と終対象}
+\begin{definition}[始対象と終対象]
+
+  ある圏$\mathcal C$において、対象$0 \in ob(\mathcal C)$が始対象(Initial object)であるとは、$0$から$圏\mathcal C$のすべての対象$X$への射が一つ存在することである。すなわち、$$0 \in ob(\mathcal C), \forall X \in ob(C), \exists! \mathcal C (0, X)$$である。
+  また、対象$1$が終対象であるとは、$$\forall Y \in ob(C), \exists!\mathcal C(Y, 1)$$となることである。
 \end{definition}
 
+\subsection{双対圏}
+\begin{definition}[双対圏] 
+
+  圏$\mathcal C$に対して、双対圏と呼ばれる圏$\mathcal C^{op}$を定義する。
+  $\mathcal C^{op}$とは、$\mathcal C$と同じ対象を持ち、すなわち$ob(\mathcal C) = ob(\mathcal C^{op})$であり、さらにすべての射のドメインとコドメインを入れ替えたようなものである。
+\end{definition}
+以下に簡単な例の図を示す。
+\[\begin{tikzcd}
+	&& a &&&&&&& a && \\
+	\\
+	\\
+	b &&&& c &&& b &&&& c \\
+	\\
+	\\
+	\\
+	\\
+	&&&& {}
+	\arrow[from=1-3, to=4-1]
+	\arrow[from=1-10, to=4-12]
+	\arrow[from=4-1, to=4-5]
+	\arrow[from=4-5, to=1-3]
+	\arrow[from=4-8, to=1-10]
+	\arrow[from=4-12, to=4-8]
+\end{tikzcd}\]
+
+双対圏は非常に強力なツールである。
+ある命題が証明または反証できたとき、その双対的な圏で成り立つ命題も自動的に真偽を判定できるためである。
+何らかの数学的な概念に対して、双対的な概念はいくつもある、例えば直積と余直積、極限と余極限など(これらは英語でlimit, colimitと、co-を付けて呼称されることが多い)、
+様々なものがある。この章だけでなく、必要に応じてそれらを紹介する。
+
+\subsection{直積圏}
+圏から新たな圏を構成する方法はいくつかあるが、ここでは直積圏(product category)を紹介する。
+\begin{definition}
+
+  圏$\mathcal C, \mathcal D$とする。直積圏$\mathcal C \times D$とは、以下のデータから構成される。
+  \begin{itemize}
+    \item [対象] 圏$\mathcal C, \mathcal D$の対象の組である。\\
+    すなわち、$(c, d) \in ob(\mathcal C \times \mathcal D)であり、c \in ob(\mathcal C)かつd \in ob(\mathcal D)$である。
+    \item [射] 圏$\mathcal C, \mathcal D$の対象の組である。\\
+    すなわち、$(f_{\mathcal C}, f_{\mathcal D}) \in Mor(\mathcal C \times \mathcal D)$であり、\\
+    $f_{\mathcal C} \in Mor(\mathcal C)$かつ$f_{\mathcal D} \in Mor(\mathcal D)$である。
+    \item [合成] 射の合成は、要素ごとに行う。つまり、$(f_{\mathcal C}, f_{\mathcal D}) \circ (g_{\mathcal C}, g_{\mathcal D}) = (f_{\mathcal C} \circ g_{\mathcal C},  f_{\mathcal D} \circ g_{\mathcal D})$である。
+    \item [恒等射] それぞれの圏での恒等射の組を恒等射とする。
+  \end{itemize}
+\end{definition}
+
+%TODO 圏の例を追加、関手の例を追加
+
+\clearpage
+\section{関手}
+
+次に、圏と圏の対応付けであり、写像のようなものである関手を定義する。
+射が対象から対象への乗り換えであれば、関手は圏を乗り換える。
+\subsection{関手の定義}
+\begin{definition}[関手]
+
+  圏$\mathcal C$と圏$\mathcal D$において、対応関係$F$が関手であるとは、以下を満たすことをいう。
+  \begin{itemize}
+    \item すべての対象$x \in ob(\mathcal C)$に対して、$Fx \in ob(\mathcal D)$が一つ存在する。
+    \item すべての射$f \in Mor (\mathcal C)$に対して、$Ff \in Mor(\mathcal D)$が一つ存在する。
+    \item $f : x \to y$ならば、$Ff: Fx \to Fy$である。
+    \item $F(id_x) = id(_Fx)$が成り立つ。
+    \item 圏$\mathcal C$において、射の合成$f \circ g \circ h$があるとき、圏$\mathcal D$においても$Ff \circ Fg \circ Fh$が成り立つ。
+  \end{itemize}
+
+\end{definition}
+\subsection{関手の具体例}
+以下に、いくつか簡単な関手の例を紹介する。
+
+\[\begin{tikzcd}
+	x &&& Fx \\
+	{} &&& {} \\
+	y &&& Fy
+	\arrow["{関手F}", shift right=3, curve={height=-30pt}, dashed, from=1-1, to=1-4]
+	\arrow["f"', from=1-1, to=3-1]
+	\arrow["Ff", from=1-4, to=3-4]
+	\arrow["{関手F}", shift right=3, curve={height=-30pt}, dashed, from=2-1, to=2-4]
+	\arrow["{関手F}", shift right=3, curve={height=-30pt}, dashed, from=3-1, to=3-4]
+\end{tikzcd}\]
 
 \end{document}
