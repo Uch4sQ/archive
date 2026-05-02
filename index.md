@@ -9,7 +9,9 @@ I will mainly share PDFs of what I have studied and the seminars I have attended
  - [Math](./math/) - PDFs on mathematics what I studied.
 
 # Contact
-Feel free to reach out to me via email at: j125141[at]g.kogakuin.jp
+Feel free to reach out to me via 
+- email: j125141[at]g.kogakuin.jp
+- X (Twitter): [@uch4sq_](https://x.com/uch4sq_)
 
 ### License
 All my study notes are shared under the CC BY 4.0 license unless otherwise noted.
