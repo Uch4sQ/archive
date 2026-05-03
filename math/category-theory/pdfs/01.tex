@@ -132,7 +132,27 @@ $f \in Hom(A, B)$に対して、$A$を射$f$のドメイン、$B$をコドメイ
   \end{itemize}
 \end{definition}
 
-%TODO 圏の例を追加、関手の例を追加
+\subsection{半順序集合}
+かなりシンプルだが強力な例である半順序集合(Partial order set)を圏としてみなす方法を紹介する。
+\begin{definition}[半順序集合]
+  空でない集合$P$が半順序集合であるとは、集合上の二項関係$\leq$において、
+  \begin{itemize}
+    \item [反射律] 任意の$p \in P$対して、$p \leq p$
+    \item [推移律] $x, y, z\in P$に対して、$x \leq y, y \leq z$ならば$x \leq z$
+    \item [反対称律] $p, q \in P$に対して、$p \leq q, q \leq p$ならば$p = q$
+  \end{itemize}
+  上記を満たすもののことである。この集合に対して、$p \leq q$が成り立つとき$p \to q$の唯一の射が存在すると定義する。
+  射の合成を推移律、恒等射を反射律とすれば、この集合は圏の定義を満たす。この圏を$Poset$と呼ぶこともある。
+\end{definition}
+
+\subsection{行列の圏}
+対象を自然数(0, 1, 2, ...)とし、自然数$n$から$m$の射$f:n \to m$を$m \times n$行列$M$とする。
+$f:n \to m$と$g:m \to p$の合成$g \circ f: n \to p$は行列の積$BA$と定義する。対象$n$において恒等射$id_n$は$n \times n$は、$n$次単位行列$I_n$とする。
+行列の積は結合法則を満たし、単位行列をかけても行列変わらないで、$f \circ id_n = f = 1 \circ f$が成り立つ。
+この圏を$\mathbf{Mat}$と呼ぶ。
+
+この圏で双対圏$\mathbf{Mat^{op}}$を考えると、転置行列となる。
+
 
 \clearpage
 \section{関手}
@@ -165,5 +185,7 @@ $f \in Hom(A, B)$に対して、$A$を射$f$のドメイン、$B$をコドメイ
 	\arrow["{関手F}", shift right=3, curve={height=-30pt}, dashed, from=2-1, to=2-4]
 	\arrow["{関手F}", shift right=3, curve={height=-30pt}, dashed, from=3-1, to=3-4]
 \end{tikzcd}\]
+
+
 
 \end{document}
