@@ -5,3 +5,6 @@ Once I've finished studying category theory, I'm planning to study coalgebras an
 ## Topics
 - [Category theory](./category-theory/)
 I will summarize the content of the seminar about category theory I worked on with my club members and master or doctor students.(But in Japanese sry)
+
+- [Set theory](./set-theory/)
+I will cover only the absolute basics of set theory. I won’t cover topological spaces, but I’ll write about them if there is demand.
