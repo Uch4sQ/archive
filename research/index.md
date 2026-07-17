@@ -22,28 +22,17 @@ nav: research
   </header>
 
   <section class="section compact-section">
-    <header class="section-heading"><div><p class="eyebrow"><span data-lang="en">Published papers</span><span data-lang="ja">公開論文</span></p><h2><span data-lang="en">Two <em>results</em></span><span data-lang="ja">二つの<em>成果</em></span></h2></div><p class="section-number">02 / 02</p></header>
+    <header class="section-heading"><div><p class="eyebrow"><span data-lang="en">Published paper</span><span data-lang="ja">公開論文</span></p><h2><span data-lang="en">Paper <em>01</em></span><span data-lang="ja">論文 <em>01</em></span></h2></div><p class="section-number">01 / 01</p></header>
     <article class="paper-feature">
       <div class="paper-index" aria-hidden="true">01</div>
       <div class="paper-body">
-        <div class="paper-tags"><span>Metatheory</span><span>Lean 4</span><span>Japanese</span><span>16 pages</span></div>
+        <div class="paper-tags"><span>Metatheory</span><span>Lean 4</span><span>日本語 / English</span><span>16 / 11 pages</span></div>
         <h3 class="paper-title-long"><span data-lang="en">Formalizing Type Safety<br>for Call-by-Value STLC in Lean 4</span><span data-lang="ja">Lean 4における単純型付きラムダ計算の<br>call-by-value評価に対する型安全性証明の形式化に関する研究</span></h3>
         <p data-lang="en">Preservation, progress, and no-stuckness for call-by-value STLC with booleans, mechanically verified in Lean 4.</p>
         <p data-lang="ja">真偽値を備えたcall-by-value STLCに対するpreservation、progress、no-stucknessをLean 4で機械検証します。</p>
-        <div class="paper-footer"><span>10 JUL 2026</span><a class="button button-dark" href="papers/paper1.pdf" target="_blank" rel="noopener noreferrer"><span data-lang="en">Open PDF</span><span data-lang="ja">PDFを開く</span><span aria-hidden="true">↗</span></a></div>
+        <div class="paper-footer"><span>10 JUL 2026</span><div class="paper-actions"><a class="button button-dark" href="papers/paper1.pdf" target="_blank" rel="noopener noreferrer">日本語 PDF <span aria-hidden="true">↗</span></a><a class="button button-light" href="papers/saito_paper1_cbv_type_safety_stlcextbool_en.pdf" target="_blank" rel="noopener noreferrer">English PDF <span aria-hidden="true">↗</span></a></div></div>
       </div>
       <div class="paper-glyph" aria-hidden="true"><span>λ</span><small>:</small><span>τ</span></div>
-    </article>
-    <article class="paper-feature">
-      <div class="paper-index" aria-hidden="true">02</div>
-      <div class="paper-body">
-        <div class="paper-tags"><span>Term rewriting</span><span>Lean 4</span><span>English</span><span>6 pages</span></div>
-        <h3 class="paper-title-long">A Lean 4 Toolbox for First-Order Term Rewriting</h3>
-        <p data-lang="en">Critical pairs, Newman confluence, Knuth-Bendix-style arguments, and completion orderings in a reproducible Lean 4 development.</p>
-        <p data-lang="ja">臨界対、Newmanの補題、Knuth-Bendix型の合流性証明、完備化順序を再現可能なLean 4形式化としてまとめます。</p>
-        <div class="paper-footer"><span>ITP 2026 · SHORT PAPER</span><a class="button button-dark" href="papers/paper2-en.pdf" target="_blank" rel="noopener noreferrer"><span data-lang="en">Open English PDF</span><span data-lang="ja">英語PDFを開く</span><span aria-hidden="true">↗</span></a></div>
-      </div>
-      <div class="paper-glyph paper-glyph-alt" aria-hidden="true"><span>↠</span><small>*</small><span>◇</span></div>
     </article>
   </section>
 
