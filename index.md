@@ -7,14 +7,14 @@ nav: home
 <main id="main-content">
   <section class="hero shell">
     <div class="hero-copy reveal">
-      <p class="eyebrow"><span data-lang="en">Soma Saito · Mathematics, Type Theory &amp; Formalized Metatheory</span><span data-lang="ja">齋藤 湊馬 · 数学・型理論・形式化メタ理論</span></p>
+      <p class="eyebrow"><span data-lang="en">Personal website</span><span data-lang="ja">個人サイト</span></p>
       <h1>
-        <span data-lang="en">Thinking in<br><em>structures.</em></span>
-        <span data-lang="ja">構造から、<br><em>考える。</em></span>
+        <span data-lang="en">Soma<br><em>Saito.</em></span>
+        <span data-lang="ja">齋藤<br><em>湊馬。</em></span>
       </h1>
       <div class="hero-intro">
-        <p data-lang="en">I study the mathematical structures behind computation — from type theory and category theory to formalized metatheory.</p>
-        <p data-lang="ja">型理論・圏論・形式化されたメタ理論を通して、計算の背後にある数学的構造を探究しています。</p>
+        <p data-lang="en">Mathematics, type theory, and formalized metatheory.</p>
+        <p data-lang="ja">数学・型理論・形式化メタ理論。</p>
       </div>
       <div class="hero-actions">
         <a class="button button-primary" href="#papers">
@@ -25,19 +25,14 @@ nav: home
       </div>
     </div>
 
-    <aside class="hero-note reveal delay-1" aria-label="Current focus">
-      <div class="orbit-mark" aria-hidden="true"><span>λ</span></div>
-      <p class="note-label"><span data-lang="en">Currently exploring</span><span data-lang="ja">現在の関心</span></p>
-      <p class="note-topic"><span data-lang="en">Categorical semantics<br>of programming</span><span data-lang="ja">プログラミングの<br>圏論的意味論</span></p>
-      <div class="note-rule"></div>
-      <p class="note-meta"><span data-lang="en">Theoretical computer science<br>&amp; mathematics</span><span data-lang="ja">理論計算機科学<br>・数学</span></p>
+    <aside class="hero-profile reveal delay-1" aria-label="Profile">
+      <p class="eyebrow"><span data-lang="en">About</span><span data-lang="ja">プロフィール</span></p>
+      <p class="profile-name"><span data-lang="en">Undergraduate student<br>at Kogakuin University</span><span data-lang="ja">工学院大学<br>学部生</span></p>
+      <dl class="profile-list">
+        <div><dt><span data-lang="en">Focus</span><span data-lang="ja">関心</span></dt><dd>Type theory<br>Category theory<br>Lean 4</dd></div>
+        <div><dt><span data-lang="en">Based in</span><span data-lang="ja">所属</span></dt><dd>Tokyo, Japan</dd></div>
+      </dl>
     </aside>
-  </section>
-
-  <section class="ticker" aria-label="Research interests">
-    <div class="ticker-track">
-      <span>TYPE THEORY</span><i>✦</i><span>CATEGORY THEORY</span><i>✦</i><span>LEAN 4</span><i>✦</i><span>FORMALIZED MATHEMATICS</span><i>✦</i><span>TYPE THEORY</span><i>✦</i><span>CATEGORY THEORY</span>
-    </div>
   </section>
 
   <section class="section shell" id="papers">
