@@ -1,3 +1,11 @@
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme 
+title: Soma Saito
+description: Notes on mathematics, type theory, and formalized metatheory by Soma Saito.
+url: "https://uch4sq.github.io"
+baseurl: "/archive"
+author: Soma Saito
+lang: en
+markdown: kramdown
+permalink: pretty
+exclude:
+  - tmp
+  - "**/*.tex"
