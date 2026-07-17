@@ -6,9 +6,10 @@ nav: home
 
 <main id="main-content" class="simple-shell">
   <section class="intro-block">
-    <p class="kicker"><span data-lang="en">Personal homepage</span><span data-lang="ja">個人サイト</span></p>
-    <p class="intro-lede" data-lang="en">I am an undergraduate student at Kogakuin University, studying theoretical computer science and mathematics.</p>
-    <p class="intro-lede" data-lang="ja">工学院大学で理論計算機科学と数学を学んでいる学部生です。</p>
+    <p class="kicker"><span data-lang="en">Profile</span><span data-lang="ja">プロフィール</span></p>
+    <h1 class="intro-name"><span data-lang="en">Soma Saito</span><span data-lang="ja">齋藤 湊馬</span></h1>
+    <p class="intro-lede" data-lang="en">Undergraduate student at Kogakuin University, studying theoretical computer science and mathematics.</p>
+    <p class="intro-lede" data-lang="ja">工学院大学で理論計算機科学と数学を学んでいます。</p>
     <p class="intro-copy" data-lang="en">My interests include type theory, category theory, formalized mathematics, and categorical semantics of programming.</p>
     <p class="intro-copy" data-lang="ja">型理論、圏論、形式化数学、プログラミングの圏論的意味論に関心があります。</p>
   </section>
