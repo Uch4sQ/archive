@@ -4,48 +4,28 @@ title: Research
 nav: research
 ---
 
-<main id="main-content" class="inner-page shell">
-  <header class="page-hero page-hero-composed reveal">
-    <div class="page-hero-copy">
-      <p class="eyebrow"><span data-lang="en">Research · Collection 02</span><span data-lang="ja">研究 · Collection 02</span></p>
-      <h1><span data-lang="en">Making proofs<br><em>explicit.</em></span><span data-lang="ja">証明を、<br><em>形にする。</em></span></h1>
-      <p data-lang="en">Mechanized metatheory in Lean 4, from type safety to confluence and term rewriting.</p>
-      <p data-lang="ja">型安全性から合流性・項書換えまで、Lean 4でメタ理論を機械検証します。</p>
-    </div>
-    <aside class="hero-note page-note" aria-label="Research focus">
-      <div class="orbit-mark" aria-hidden="true"><span>λ</span></div>
-      <p class="note-label"><span data-lang="en">Research practice</span><span data-lang="ja">研究の方法</span></p>
-      <p class="note-topic"><span data-lang="en">Specify.<br>Formalize. Verify.</span><span data-lang="ja">定義する。<br>形式化する。確かめる。</span></p>
-      <div class="note-rule"></div>
-      <p class="note-meta">LEAN 4 · TYPE SAFETY · CONFLUENCE</p>
-    </aside>
+<main id="main-content" class="simple-shell">
+  <header class="page-intro">
+    <p class="kicker">Research</p>
+    <h1><span data-lang="en">Formalized metatheory</span><span data-lang="ja">形式化メタ理論</span></h1>
+    <p data-lang="en">Notes and papers on type theory, Lean 4, reduction, and semantics.</p>
+    <p data-lang="ja">型理論、Lean 4、簡約、意味論についてのノートと論文です。</p>
   </header>
-
-  <section class="section compact-section">
-    <header class="section-heading"><div><p class="eyebrow"><span data-lang="en">Published paper</span><span data-lang="ja">公開論文</span></p><h2><span data-lang="en">Paper <em>01</em></span><span data-lang="ja">論文 <em>01</em></span></h2></div><p class="section-number">01 / 01</p></header>
-    <article class="paper-feature">
-      <div class="paper-index" aria-hidden="true">01</div>
-      <div class="paper-body">
-        <div class="paper-tags"><span>Metatheory</span><span>Lean 4</span><span>日本語 / English</span><span>16 / 11 pages</span></div>
-        <h3 class="paper-title-long"><span data-lang="en">Formalizing Type Safety<br>for Call-by-Value STLC in Lean 4</span><span data-lang="ja">Lean 4における単純型付きラムダ計算の<br>call-by-value評価に対する型安全性証明の形式化に関する研究</span></h3>
-        <p data-lang="en">Preservation, progress, and no-stuckness for call-by-value STLC with booleans, mechanically verified in Lean 4.</p>
-        <p data-lang="ja">真偽値を備えたcall-by-value STLCに対するpreservation、progress、no-stucknessをLean 4で機械検証します。</p>
-        <div class="paper-footer"><span>10 JUL 2026</span><div class="paper-actions"><a class="button button-dark" href="papers/paper1.pdf" target="_blank" rel="noopener noreferrer">日本語 PDF <span aria-hidden="true">↗</span></a><a class="button button-light" href="papers/saito_paper1_cbv_type_safety_stlcextbool_en.pdf" target="_blank" rel="noopener noreferrer">English PDF <span aria-hidden="true">↗</span></a></div></div>
+  <section class="content-section">
+    <div class="section-line"><h2><span data-lang="en">Paper 01</span><span data-lang="ja">論文 01</span></h2><span>2026</span></div>
+    <article class="paper-row">
+      <div class="paper-row-index">01</div>
+      <div class="paper-row-content">
+        <h3><span data-lang="en">Formalizing Type Safety for Call-by-Value Evaluation in the Simply Typed Lambda Calculus with Booleans in Lean 4</span><span data-lang="ja">Lean 4における単純型付きラムダ計算のcall-by-value評価に対する型安全性証明の形式化に関する研究</span></h3>
+        <p data-lang="en">Preservation, progress, and no-stuckness for STLCextBool.</p><p data-lang="ja">STLCextBoolに対するpreservation、progress、no-stuckness。</p>
+        <div class="paper-meta"><span>Japanese 16 pp. / English 11 pp.</span><span>Lean 4</span></div>
+        <div class="paper-links"><a href="papers/paper1.pdf" target="_blank" rel="noopener noreferrer">日本語 PDF ↗</a><a href="papers/saito_paper1_cbv_type_safety_stlcextbool_en.pdf" target="_blank" rel="noopener noreferrer">English PDF ↗</a></div>
       </div>
-      <div class="paper-glyph" aria-hidden="true"><span>λ</span><small>:</small><span>τ</span></div>
     </article>
   </section>
-
-  <section class="research-list">
-    <article class="research-row reveal">
-      <div class="status-dot"><span></span><span data-lang="en">In progress</span><span data-lang="ja">準備中</span></div>
-      <div><p class="eyebrow">Lean 4 · Metatheory</p><h2><span data-lang="en">Multi-step reduction<br>and context closure</span><span data-lang="ja">多段階簡約と<br>文脈閉包</span></h2><p data-lang="en">A formal account of reduction relations and their closure properties in Lean 4.</p><p data-lang="ja">Lean 4上で簡約関係とその閉包性質を形式化するためのノート。</p></div>
-      <span class="research-mark" aria-hidden="true">↠*</span>
-    </article>
-    <article class="research-row reveal delay-1">
-      <div class="status-dot"><span></span><span data-lang="en">In progress</span><span data-lang="ja">準備中</span></div>
-      <div><p class="eyebrow">Lambda calculus · Types</p><h2><span data-lang="en">Small extensions<br>of STLC</span><span data-lang="ja">単純型付きラムダ計算の<br>小さな拡張</span></h2><p data-lang="en">Design notes on type safety and modest extensions of typed lambda calculi.</p><p data-lang="ja">型安全性と、型付きラムダ計算への小さな拡張についての設計ノート。</p></div>
-      <span class="research-mark" aria-hidden="true">λ:</span>
-    </article>
+  <section class="content-section">
+    <div class="section-line"><h2><span data-lang="en">Working notes</span><span data-lang="ja">研究ノート</span></h2></div>
+    <div class="list-row static-row"><span>01</span><div><h3><span data-lang="en">Multi-step reduction and context closure</span><span data-lang="ja">多段階簡約と文脈閉包</span></h3><p data-lang="en">Lean 4 formalization in progress.</p><p data-lang="ja">Lean 4で形式化中。</p></div><b>—</b></div>
+    <div class="list-row static-row"><span>02</span><div><h3><span data-lang="en">Small extensions of STLC</span><span data-lang="ja">単純型付きラムダ計算の小さな拡張</span></h3><p data-lang="en">Design notes on type safety and typed lambda calculi.</p><p data-lang="ja">型安全性と型付きラムダ計算について。</p></div><b>—</b></div>
   </section>
 </main>

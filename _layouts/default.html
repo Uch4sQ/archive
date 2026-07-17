@@ -13,14 +13,11 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="header-inner shell">
-        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Soma Saito, home">
-          <span class="wordmark-mark">S</span>
-          <span class="wordmark-text">SOMA SAITO<small>MATHEMATICS · TYPE THEORY · METATHEORY</small></span>
-        </a>
+        <a class="site-label" href="{{ '/' | relative_url }}" aria-label="Home">SS / notes</a>
         <nav class="main-nav" aria-label="Main navigation">
-          <a data-nav="home" href="{{ '/' | relative_url }}"><span data-lang="en">Index</span><span data-lang="ja">トップ</span></a>
-          <a data-nav="math" href="{{ '/math/' | relative_url }}"><span data-lang="en">Mathematics</span><span data-lang="ja">数学</span></a>
-          <a data-nav="research" href="{{ '/research/' | relative_url }}"><span data-lang="en">Research</span><span data-lang="ja">研究</span></a>
+          <a data-nav="home" href="{{ '/' | relative_url }}"><span data-lang="en">Home</span><span data-lang="ja">Home</span></a>
+          <a data-nav="math" href="{{ '/math/' | relative_url }}"><span data-lang="en">Math</span><span data-lang="ja">Math</span></a>
+          <a data-nav="research" href="{{ '/research/' | relative_url }}"><span data-lang="en">Research</span><span data-lang="ja">Research</span></a>
         </nav>
         <div class="language-switch" role="group" aria-label="Language">
           <button type="button" data-set-lang="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-set-lang="ja" aria-pressed="false">JP</button>
@@ -32,9 +29,8 @@
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <div><span class="footer-mark">S</span><p>© {{ 'now' | date: '%Y' }} Soma Saito<br><span data-lang="en">Shared under CC BY 4.0 unless noted.</span><span data-lang="ja">特記なき限り CC BY 4.0 で公開。</span></p></div>
-        <p class="footer-note"><span data-lang="en">An evolving record of<br>mathematics &amp; computation.</span><span data-lang="ja">数学と計算をめぐる、<br>更新され続ける記録。</span></p>
-        <a class="back-top" href="#"><span data-lang="en">Back to top</span><span data-lang="ja">ページ上部へ</span> ↑</a>
+        <p>© {{ 'now' | date: '%Y' }} Soma Saito · <span data-lang="en">CC BY 4.0 unless noted</span><span data-lang="ja">特記なき限り CC BY 4.0</span></p>
+        <a class="back-top" href="#"><span data-lang="en">Top</span><span data-lang="ja">上へ</span> ↑</a>
       </div>
     </footer>
   </body>
