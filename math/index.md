@@ -5,11 +5,20 @@ nav: math
 ---
 
 <main id="main-content" class="inner-page shell">
-  <header class="page-hero reveal">
-    <p class="eyebrow">Collection 01</p>
-    <h1><span data-lang="en">Mathematics</span><span data-lang="ja">数学</span></h1>
-    <p data-lang="en">Notes on algebraic structures, category theory, and the foundations that support them.</p>
-    <p data-lang="ja">代数的構造、圏論、そしてそれらを支える基礎についての学習ノートです。</p>
+  <header class="page-hero page-hero-composed reveal">
+    <div class="page-hero-copy">
+      <p class="eyebrow"><span data-lang="en">Mathematics · Collection 01</span><span data-lang="ja">数学 · Collection 01</span></p>
+      <h1><span data-lang="en">Patterns,<br><em>proofs, structure.</em></span><span data-lang="ja">構造を、<br><em>読み解く。</em></span></h1>
+      <p data-lang="en">Notes on the structures that organize mathematical thought, from sets to categories.</p>
+      <p data-lang="ja">集合から圏まで、数学的な思考を組み立てる構造を学んだ記録です。</p>
+    </div>
+    <aside class="hero-note page-note" aria-label="Mathematics focus">
+      <div class="orbit-mark" aria-hidden="true"><span>∑</span></div>
+      <p class="note-label"><span data-lang="en">A way of seeing</span><span data-lang="ja">ものの見方</span></p>
+      <p class="note-topic"><span data-lang="en">From examples<br>to structure.</span><span data-lang="ja">具体例から、<br>構造へ。</span></p>
+      <div class="note-rule"></div>
+      <p class="note-meta">SETS · CATEGORIES · ALGEBRA</p>
+    </aside>
   </header>
 
   <section class="topic-list">

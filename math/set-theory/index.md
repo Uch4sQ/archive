@@ -6,11 +6,20 @@ nav: math
 
 <main id="main-content" class="inner-page shell">
   <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="{{ '/math/' | relative_url }}"><span data-lang="en">Mathematics</span><span data-lang="ja">数学</span></a><span>/</span><span data-lang="en">Set theory</span><span data-lang="ja">集合論</span></nav>
-  <header class="page-hero reveal">
-    <p class="eyebrow">Topic 02</p>
-    <h1><span data-lang="en">Set<br><em>theory.</em></span><span data-lang="ja">集合論<em>。</em></span></h1>
-    <p data-lang="en">A concise introduction to the elementary language of sets and functions.</p>
-    <p data-lang="ja">数学を学ぶための基礎として、集合と写像の言葉を簡潔にまとめます。</p>
+  <header class="page-hero page-hero-composed reveal">
+    <div class="page-hero-copy">
+      <p class="eyebrow"><span data-lang="en">Mathematics · Set Theory</span><span data-lang="ja">数学 · 集合論</span></p>
+      <h1><span data-lang="en">Foundations,<br><em>made precise.</em></span><span data-lang="ja">基礎を、<br><em>厳密に。</em></span></h1>
+      <p data-lang="en">A concise introduction to the elementary language of sets, functions, and logic.</p>
+      <p data-lang="ja">数学を学ぶための基礎として、集合・写像・論理の言葉を簡潔にまとめます。</p>
+    </div>
+    <aside class="hero-note page-note" aria-label="Set theory focus">
+      <div class="orbit-mark" aria-hidden="true"><span>∅</span></div>
+      <p class="note-label"><span data-lang="en">Begin at the base</span><span data-lang="ja">基礎から始める</span></p>
+      <p class="note-topic"><span data-lang="en">Sets. Maps.<br>Logical form.</span><span data-lang="ja">集合。写像。<br>論理のかたち。</span></p>
+      <div class="note-rule"></div>
+      <p class="note-meta">SETS · FUNCTIONS · LOGIC</p>
+    </aside>
   </header>
 
   <section class="section compact-section">

@@ -5,15 +5,24 @@ nav: research
 ---
 
 <main id="main-content" class="inner-page shell">
-  <header class="page-hero reveal">
-    <p class="eyebrow">Collection 02</p>
-    <h1><span data-lang="en">Research</span><span data-lang="ja">研究</span></h1>
-    <p data-lang="en">Papers and working notes on type theory, formalized metatheory, Lean 4, and categorical semantics.</p>
-    <p data-lang="ja">型理論、形式化されたメタ理論、Lean 4、圏論的意味論についての論文と研究ノートです。</p>
+  <header class="page-hero page-hero-composed reveal">
+    <div class="page-hero-copy">
+      <p class="eyebrow"><span data-lang="en">Research · Collection 02</span><span data-lang="ja">研究 · Collection 02</span></p>
+      <h1><span data-lang="en">Making proofs<br><em>explicit.</em></span><span data-lang="ja">証明を、<br><em>形にする。</em></span></h1>
+      <p data-lang="en">Mechanized metatheory in Lean 4, from type safety to confluence and term rewriting.</p>
+      <p data-lang="ja">型安全性から合流性・項書換えまで、Lean 4でメタ理論を機械検証します。</p>
+    </div>
+    <aside class="hero-note page-note" aria-label="Research focus">
+      <div class="orbit-mark" aria-hidden="true"><span>λ</span></div>
+      <p class="note-label"><span data-lang="en">Research practice</span><span data-lang="ja">研究の方法</span></p>
+      <p class="note-topic"><span data-lang="en">Specify.<br>Formalize. Verify.</span><span data-lang="ja">定義する。<br>形式化する。確かめる。</span></p>
+      <div class="note-rule"></div>
+      <p class="note-meta">LEAN 4 · TYPE SAFETY · CONFLUENCE</p>
+    </aside>
   </header>
 
   <section class="section compact-section">
-    <header class="section-heading"><div><p class="eyebrow"><span data-lang="en">Published paper</span><span data-lang="ja">公開論文</span></p><h2><span data-lang="en">Paper <em>01</em></span><span data-lang="ja">論文 <em>01</em></span></h2></div></header>
+    <header class="section-heading"><div><p class="eyebrow"><span data-lang="en">Published papers</span><span data-lang="ja">公開論文</span></p><h2><span data-lang="en">Two <em>results</em></span><span data-lang="ja">二つの<em>成果</em></span></h2></div><p class="section-number">02 / 02</p></header>
     <article class="paper-feature">
       <div class="paper-index" aria-hidden="true">01</div>
       <div class="paper-body">
@@ -24,6 +33,17 @@ nav: research
         <div class="paper-footer"><span>10 JUL 2026</span><a class="button button-dark" href="papers/paper1.pdf" target="_blank" rel="noopener noreferrer"><span data-lang="en">Open PDF</span><span data-lang="ja">PDFを開く</span><span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="paper-glyph" aria-hidden="true"><span>λ</span><small>:</small><span>τ</span></div>
+    </article>
+    <article class="paper-feature">
+      <div class="paper-index" aria-hidden="true">02</div>
+      <div class="paper-body">
+        <div class="paper-tags"><span>Term rewriting</span><span>Lean 4</span><span>English</span><span>6 pages</span></div>
+        <h3 class="paper-title-long">A Lean 4 Toolbox for First-Order Term Rewriting</h3>
+        <p data-lang="en">Critical pairs, Newman confluence, Knuth-Bendix-style arguments, and completion orderings in a reproducible Lean 4 development.</p>
+        <p data-lang="ja">臨界対、Newmanの補題、Knuth-Bendix型の合流性証明、完備化順序を再現可能なLean 4形式化としてまとめます。</p>
+        <div class="paper-footer"><span>ITP 2026 · SHORT PAPER</span><a class="button button-dark" href="papers/paper2-en.pdf" target="_blank" rel="noopener noreferrer"><span data-lang="en">Open English PDF</span><span data-lang="ja">英語PDFを開く</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="paper-glyph paper-glyph-alt" aria-hidden="true"><span>↠</span><small>*</small><span>◇</span></div>
     </article>
   </section>
 

@@ -44,9 +44,9 @@ nav: home
     <header class="section-heading reveal">
       <div>
         <p class="eyebrow"><span data-lang="en">Selected writing</span><span data-lang="ja">公開ノート</span></p>
-        <h2><span data-lang="en">Paper <em>01</em></span><span data-lang="ja">ノート <em>01</em></span></h2>
+        <h2><span data-lang="en">Selected <em>papers</em></span><span data-lang="ja">公開<em>論文</em></span></h2>
       </div>
-      <p class="section-number">01 / 01</p>
+      <p class="section-number">02 / 02</p>
     </header>
 
     <article class="paper-feature reveal">
@@ -65,6 +65,24 @@ nav: home
         </div>
       </div>
       <div class="paper-glyph" aria-hidden="true"><span>λ</span><small>:</small><span>τ</span></div>
+    </article>
+
+    <article class="paper-feature reveal">
+      <div class="paper-index" aria-hidden="true">02</div>
+      <div class="paper-body">
+        <div class="paper-tags"><span>Term rewriting</span><span>Lean 4</span><span>English</span><span>6 pages</span></div>
+        <h3 class="paper-title-long">A Lean 4 Toolbox for First-Order Term Rewriting</h3>
+        <p data-lang="en">A mechanized confluence proof pipeline covering critical pairs, Newman’s lemma, Knuth-Bendix-style arguments, and reduction orderings for termination.</p>
+        <p data-lang="ja">臨界対、Newmanの補題、Knuth-Bendix型の合流性証明、停止性のための簡約順序をLean 4で機械化した英語論文です。</p>
+        <div class="paper-footer">
+          <span>ITP 2026 · SHORT PAPER</span>
+          <a class="button button-dark" href="{{ '/research/papers/paper2-en.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
+            <span data-lang="en">Open English PDF</span><span data-lang="ja">英語PDFを開く</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="paper-glyph paper-glyph-alt" aria-hidden="true"><span>↠</span><small>*</small><span>◇</span></div>
     </article>
   </section>
 
@@ -85,7 +103,7 @@ nav: home
         <span class="card-link"><span data-lang="en">Explore collection</span><span data-lang="ja">コレクションを見る</span> →</span>
       </a>
       <a class="collection-card reveal delay-1" href="{{ '/research/' | relative_url }}">
-        <span class="collection-count">01 paper · 02 threads</span>
+        <span class="collection-count">02 papers · 02 threads</span>
         <span class="collection-symbol" aria-hidden="true">λ</span>
         <h3><span data-lang="en">Research</span><span data-lang="ja">研究</span></h3>
         <p data-lang="en">Lean 4 metatheory, type safety, and small extensions of typed lambda calculi.</p>
