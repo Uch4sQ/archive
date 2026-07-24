@@ -15,7 +15,17 @@ nav: home
   </section>
 
   <section class="content-section" id="papers">
-    <div class="section-line"><h2><span data-lang="en">Paper 01</span><span data-lang="ja">論文 01</span></h2><span>2026</span></div>
+    <div class="section-line"><h2><span data-lang="en">Papers</span><span data-lang="ja">論文</span></h2><span>2026</span></div>
+    <article class="paper-row">
+      <div class="paper-row-index">02</div>
+      <div class="paper-row-content">
+        <h3><span data-lang="en">Categorical Semantics and Operational Soundness for an Extended Simply Typed Lambda Calculus in Lean 4</span><span data-lang="ja">Lean 4における拡張単純型付きラムダ計算の圏論的意味論と操作的健全性</span></h3>
+        <p data-lang="en">Denotation of intrinsically typed STLCextBool in a chosen Cartesian closed category with primitive Boolean structure, and denotational preservation for full-congruence and call-by-value reduction.</p>
+        <p data-lang="ja">原始Bool構造を備えた構造指定カルテシアン閉圏における内在的型付きSTLCextBoolの表示と、完全合同閉包・値呼び簡約に対する表示保存性。</p>
+        <div class="paper-meta"><span>Japanese 14 pp. / English 11 pp.</span><span>Lean 4 · Categorical semantics</span></div>
+        <div class="paper-links"><a href="{{ '/research/papers/paper2.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">日本語 PDF ↗</a><a href="{{ '/research/papers/saito_paper2_categorical_semantics_stlcextbool_en.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">English PDF ↗</a></div>
+      </div>
+    </article>
     <article class="paper-row">
       <div class="paper-row-index">01</div>
       <div class="paper-row-content">

@@ -12,7 +12,17 @@ nav: research
     <p data-lang="ja">型理論、Lean 4、簡約、意味論についてのノートと論文です。</p>
   </header>
   <section class="content-section">
-    <div class="section-line"><h2><span data-lang="en">Paper 01</span><span data-lang="ja">論文 01</span></h2><span>2026</span></div>
+    <div class="section-line"><h2><span data-lang="en">Papers</span><span data-lang="ja">論文</span></h2><span>2026</span></div>
+    <article class="paper-row">
+      <div class="paper-row-index">02</div>
+      <div class="paper-row-content">
+        <h3><span data-lang="en">Categorical Semantics and Operational Soundness for an Extended Simply Typed Lambda Calculus in Lean 4</span><span data-lang="ja">Lean 4における拡張単純型付きラムダ計算の圏論的意味論と操作的健全性</span></h3>
+        <p data-lang="en">Categorical semantics for intrinsically typed terms and typed substitutions, with soundness of beta, eta, and primitive Boolean computation.</p>
+        <p data-lang="ja">内在的型付き項と型付き置換の圏論的意味論、β簡約・η規則・原始Bool分岐計算規則の意味保存性。</p>
+        <div class="paper-meta"><span>Japanese 14 pp. / English 11 pp.</span><span>Lean 4</span></div>
+        <div class="paper-links"><a href="papers/paper2.pdf" target="_blank" rel="noopener noreferrer">日本語 PDF ↗</a><a href="papers/saito_paper2_categorical_semantics_stlcextbool_en.pdf" target="_blank" rel="noopener noreferrer">English PDF ↗</a></div>
+      </div>
+    </article>
     <article class="paper-row">
       <div class="paper-row-index">01</div>
       <div class="paper-row-content">
