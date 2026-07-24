@@ -19,7 +19,7 @@ nav: math
       <div class="paper-row-content">
         <h3><span data-lang="en">Foundations of Sets and Functions</span><span data-lang="ja">集合と写像の基礎</span></h3>
         <p data-lang="en">The elementary language of sets, functions, and logical symbols.</p>
-        <p data-lang="ja">集合・写像と、それらを記述する論理記号。</p>
+        <p data-lang="ja">集合や写像、そしてそれらを記述する論理記号について、やさしくまとめています。</p>
         <div class="paper-links"><a href="out/set01.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a></div>
       </div>
     </article>

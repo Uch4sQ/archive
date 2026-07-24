@@ -13,7 +13,7 @@ nav: math
   </header>
   <section class="content-section">
     <div class="section-line"><h2><span data-lang="en">Topics</span><span data-lang="ja">トピック</span></h2></div>
-    <a class="list-row" href="{{ '/math/category-theory/' | relative_url }}"><span>01</span><div><h3><span data-lang="en">Category theory</span><span data-lang="ja">圏論</span></h3><p data-lang="en">Categories, functors, and the language of mathematical structure.</p><p data-lang="ja">圏・関手と、数学的構造を記述する言語。</p></div><b>→</b></a>
-    <a class="list-row" href="{{ '/math/set-theory/' | relative_url }}"><span>02</span><div><h3><span data-lang="en">Set theory</span><span data-lang="ja">集合論</span></h3><p data-lang="en">The elementary language of sets, functions, and logic.</p><p data-lang="ja">集合・写像・論理の基本。</p></div><b>→</b></a>
+    <a class="list-row" href="{{ '/math/category-theory/' | relative_url }}"><span>01</span><div><h3><span data-lang="en">Category theory</span><span data-lang="ja">圏論</span></h3><p data-lang="en">Categories, functors, and the language of mathematical structure.</p><p data-lang="ja">圏や関手を通して、数学的構造を記述する言語を学びます。</p></div><b>→</b></a>
+    <a class="list-row" href="{{ '/math/set-theory/' | relative_url }}"><span>02</span><div><h3><span data-lang="en">Set theory</span><span data-lang="ja">集合論</span></h3><p data-lang="en">The elementary language of sets, functions, and logic.</p><p data-lang="ja">集合・写像・論理について、基礎からやさしくまとめています。</p></div><b>→</b></a>
   </section>
 </main>

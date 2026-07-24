@@ -19,7 +19,7 @@ nav: math
       <div class="paper-row-content">
         <h3><span data-lang="en">Foundations of Categories and Functors</span><span data-lang="ja">圏と関手の基礎</span></h3>
         <p data-lang="en">Categories, examples, initial and terminal objects, opposite and product categories, and functors.</p>
-        <p data-lang="ja">圏の定義と具体例、始対象・終対象、双対圏、直積圏、関手。</p>
+        <p data-lang="ja">圏の定義や具体例、始対象・終対象、双対圏・直積圏、そして関手までを取り上げています。</p>
         <div class="paper-links"><a href="pdfs/01.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a></div>
       </div>
     </article>

@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f4efe6">
+    <meta name="theme-color" content="#faf9f5">
     <meta name="description" content="{{ site.description }}">
     <title>{% if page.title and page.title != 'Home' %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   </head>
@@ -20,7 +22,7 @@
           <a data-nav="research" href="{{ '/research/' | relative_url }}"><span data-lang="en">Research</span><span data-lang="ja">Research</span></a>
         </nav>
         <div class="language-switch" role="group" aria-label="Language">
-          <button type="button" data-set-lang="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-set-lang="ja" aria-pressed="false">JP</button>
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-set-lang="ja" aria-pressed="false">JA</button>
         </div>
       </div>
     </header>
